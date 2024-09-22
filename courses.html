@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Australia registered IT training school</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    
+    <header>
+        <div class="site-header">
+            <h1 class="main-title">Australia registered IT training school</h1>
+            <nav>
+                <ul class="nav-links">
+                    <img src="123.jpg" alt="Logo">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="courses.html">Course</a></li>
+                    <li><a href="projects.html">Project</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <h2> 5 IT course for students to register</h2>
+   <section class="course-boxes">  
+    <div class="course-box">  
+        <h3>Basic Programming Course</h3>  
+        <p>Price: $100</p>  
+        <p>Quantity: <input type="number" value="1" min="1"></p>  
+        <button class="add-to-cart">Add to cart</button>  
+    </div>  
+    <div class="course-box">  
+        <h3>Network Security and Management Course</h3>  
+        <p>Price: $200</p>  
+        <p>Quantity: <input type="number" value="1" min="1"></p>  
+        <button class="add-to-cart">Add to cart</button>  
+    </div>
+    <div class="course-box">  
+        <h3>Database Management and Optimization Course</h3>  
+        <p>Price: $300</p>  
+        <p>Quantity: <input type="number" value="1" min="1"></p>  
+        <button class="add-to-cart">Add to cart</button>  
+    </div>
+    <div class="course-box">  
+        <h3>Web Development and Design Course</h3>  
+        <p>Price: $400</p>  
+        <p>Quantity: <input type="number" value="1" min="1"></p>  
+        <button class="add-to-cart">Add to cart</button>  
+    </div>
+    <div class="course-box">  
+        <h3>Data Analysis and Visualization Course</h3>  
+        <p>Price: $500</p>  
+        <p>Quantity: <input type="number" value="1" min="1"></p>  
+        <button class="add-to-cart">Add to cart</button>  
+    </div>  
+</section>  
+
+<h2> 8 training resource kits for other RTOs to place order</h2>
+<section class="course-boxes">  
+    <div class="course-box">  
+        <h3>Basic Programming Training Resource Package</h3>  
+        <p>Price: $100</p>  
+        <p>Quantity: <input type="number" value="1" min="1"></p>  
+        <button class="add-to-cart">Add to cart</button>  
+    </div>  
+    <div class="course-box">  
+        <h3>Network Security Practical Training Resource Package</h3>  
+        <p>Price: $200</p>  
+        <p>Quantity: <input type="number" value="1" min="1"></p>  
+        <button class="add-to-cart">Add to cart</button>  
+    </div>
+    <div class="course-box">  
+        <h3>Database Advanced Management Training Resource Package</h3>  
+        <p>Price: $300</p>  
+        <p>Quantity: <input type="number" value="1" min="1"></p>  
+        <button class="add-to-cart">Add to cart</button>  
+    </div>
+    <div class="course-box">  
+        <h3>Web full stack development training resource package</h3>  
+        <p>Price: $400</p>  
+        <p>Quantity: <input type="number" value="1" min="1"></p>  
+        <button class="add-to-cart">Add to cart</button>  
+    </div>
+    <div class="course-box">  
+        <h3>Data Science and Machine Learning Training Resource Package</h3>  
+        <p>Price: $500</p>  
+        <p>Quantity: <input type="number" value="1" min="1"></p>  
+        <button class="add-to-cart">Add to cart</button>  
+    </div>
+    <div class="course-box">  
+        <h3>Cloud computing and big data processing training resource package</h3>  
+        <p>Price: $600</p>  
+        <p>Quantity: <input type="number" value="1" min="1"></p>  
+        <button class="add-to-cart">Add to cart</button>  
+    </div>
+    <div class="course-box">  
+        <h3>IT Project Management Training Resource Package</h3>  
+        <p>Price: $700</p>  
+        <p>Quantity: <input type="number" value="1" min="1"></p>  
+        <button class="add-to-cart">Add to cart</button>  
+    </div>
+    <div class="course-box">  
+        <h3>Software Testing and Quality Assurance Training Resource Package</h3>  
+        <p>Price: $800</p>  
+        <p>Quantity: <input type="number" value="1" min="1"></p>  
+        <button class="add-to-cart">Add to cart</button>  
+    </div>
+
+    
+<section class="cart-preview">  
+    <h3>Preview cart</h3>  
+    <div id="cart-items"></div> 
+    <p id="cart-total">Total prices: $0</p>  
+    <button id="clear-cart">Empty cart</button>  
+    <button id="checkout">Settle accounts
+    </button>  
+</section>  
+  
+
+    
+
+ 
+<footer class="site-footer">
+    <p>&copy; Colin Gu Xiaokang. All rights reserved.</p>
+    <p>RTO Registration Number: 12345678</p>
+    <p>Address: 456 Innovation Drive, Knowledge Park, Sydney NSW 2000, Australia</p>
+        <p>Telephone Number: +61 2 1234 5678</p>
+            <p>Email Address: 123456789@qq.com</p>
+</footer>
+<script>
+        
+    const hasCompletedEnquiry = localStorage.getItem('hasCompletedEnquiry') === 'true';
+
+    document.addEventListener('DOMContentLoaded', () => {
+        if (!hasCompletedEnquiry) {
+            window.location.href = 'enquiry.html';
+        } else {
+        }
+    });
+</script>
+
+    
+</body>
+</html>
