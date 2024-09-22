@@ -1,0 +1,188 @@
+/* Colin Gu Xiaokang 173190707 */
+body {
+    font-family: Arial, sans-serif; /* Setting the font family for better readability */
+    line-height: 1.6; /* Improving the line height for better readability */
+    margin: 0; /* Removing any default margin */
+    padding: 0; /* Removing any default padding */
+}
+
+/* Header styles */
+header {
+    background-color: #224397; /* Setting a blue header background color */
+    padding: 1rem; /* Adding padding to the header */
+    text-align: center; /* Centering the text inside the header */
+}
+
+/* Main title styles */
+.main-title {
+    font-size: 2.5em; /* Increasing the font size for emphasis */
+    color: #ffffff; /* Making the text color white for contrast */
+    margin-bottom: 0.5rem; /* Adding bottom margin for spacing */
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    color: #fefefe;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+
+main {
+    padding: 2rem;
+}
+
+.featured-courses,
+.new-resources {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.featured-courses h2,
+.new-resources h2 {
+    font-size: 1.5em;
+    margin-bottom: 1rem;
+}
+
+
+.site-footer {
+    display: block; 
+    width: 100%; 
+    margin-left: auto; 
+    margin-right: auto; 
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+.site-footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+    }
+    
+    .nav-links li {
+        margin: 1rem 0;
+    }
+}
+
+/* About Us page specific styles */
+#about-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.about-content {
+    list-style: disc;
+    margin-left: 1.5em;
+}
+
+.latest-news ul {
+    list-style: disc;
+    margin-left: 1.5em;
+}
+
+.contact-info address {
+    font-style: normal;
+}
+
+.contact-info strong {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+}
+
+
+.course-boxes {  
+    display: flex;  
+    justify-content: space-between;  
+    flex-wrap: wrap;  
+}  
+  
+.course-box {  
+    width: calc(20% - 10px); 
+    margin-bottom: 20px;  
+    padding: 10px;  
+    border: 1px solid #ccc;  
+    box-sizing: border-box;  
+}  
+  
+.course-box input[type="number"] {  
+    width: 50px;  
+    margin-right: 10px;  
+}  
+  
+.add-to-cart {  
+    padding: 5px 10px;  
+    background-color: #4CAF50;  
+    color: white;  
+    border: none;  
+    cursor: pointer;  
+}  
+  
+ 
+.cart-preview {  
+    display: block; 
+    width: 100%; 
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-top: 20px;  
+    padding: 20px;  
+    border: 1px solid #ccc;  
+}  
+  
+.cart-item {  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+    margin-bottom: 10px;  
+}  
+  
+.remove-from-cart, .checkout {  
+    padding: 5px 10px;  
+    background-color: #f44336;  
+    color: white;  
+    border: none;  
+    cursor: pointer;  
+}  
+  
+.clear-cart {  
+    padding: 5px 10px;  
+    background-color: #e7e7e7;  
+    color: #666;  
+    border: none;  
+    cursor: pointer;  
+    margin-right: 10px;  
+}
