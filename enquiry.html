@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Australia registered IT training school</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            flex-direction: column; 
+            min-height: 100vh; 
+            margin: 0;
+        }
+
+        header {
+            flex: 0 0 auto; 
+        }
+
+        #app {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            width: 400px;
+            margin: 20px auto; 
+            flex: 1; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        form {
+            margin: 20px auto;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #007BFF;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+   
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="site-header">
+            <h1 class="main-title">Australia registered IT training school</h1>
+            <nav>
+                <ul class="nav-links">
+                    <img src="123.jpg" alt="Logo">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="courses.html">Course</a></li>
+                    <li><a href="projects.html">Project</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+   
+    <div id="app">
+        <h1>Welcome to register a course</h1>
+        <form id="registerForm" class="hidden">
+            <h2>Register</h2>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button type="submit">Register</button>
+        </form>
+        <form id="loginForm" class="hidden">
+            <h2>Login</h2>
+            <input type="text" id="loginUsername" placeholder="Username">
+            <input type="password" id="loginPassword" placeholder="Password">
+            <button type="submit">Login</button>
+        </form>
+        <a href="#" id="switchToRegister">Go to Register</a>
+        <a href="#" id="switchToLogin" class="hidden">Go to Login</a>
+        <a href="courses.html" id="goToAbout" class="hidden">Go to About Page</a>
+    </div>
+
+    <script src="scripts.js" defer></script>
+    <footer class="site-footer">
+        <p>&copy; Colin Gu Xiaokang. All rights reserved.</p>
+        <p>RTO Registration Number: 12345678</p>
+        <p>Address: 456 Innovation Drive, Knowledge Park, Sydney NSW 2000, Australia</p>
+        <p>Telephone Number: +61 2 1234 5678</p>
+        <p>Email Address: 123456789@qq.com</p>
+    </footer>
+</body>
+</html>
